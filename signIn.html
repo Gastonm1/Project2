@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Sign up || Log in</title>
+        <link rel="stylesheet" type="text/css" href="signIn.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|ZCOOL+XiaoWei" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <body>
+                <header>
+                        <div class="row">
+            
+                            <ul class="main-nav">
+                                <li class="active"><a href="home.html">Home</a></li>
+                                <li ><a href="/about.html">Schedule It</a></li>
+                                <li ><a href="/about.html">About Us</a></li>
+                                <li ><a href="/about.html">Contact Us</a></li>
+                                
+                            </ul>
+                        </div>
+            
+<div class= "logInbox">
+    <img src="icon.png" class="avatar">
+    <h1>ClassVue</h1>
+    <form class="login-form">
+        <p>Username</p>
+        <input type="text" name="" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="" placeholder="Enter Password">
+        <input href="#" type="submit" name="" value="Login"></input>
+    
+       <p class="message">Not Registered?<a href="#">Login</a></p>
+    </form>
+    <form class="register-form">
+            <input type="text" placeholder="New Username"/>
+            <input type="text" placeholder="New Password"/>
+            <input type="text" placeholder="Email"/>
+            <input href="" type="submit" name="" value="Sign Up">
+    
+            <p class="message">Already have an account?<a href="#">SignUp</a></p>
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity:"toggle"}, "slow");
+});
+</script>
+        </body>
+    </head>
+</html>
