@@ -1,3 +1,57 @@
 .list-group-item {
   line-height: 2.5;
 }
+
+/* Yagmur's formatting for the home page */
+*
+{
+  margin: 0 ;
+  padding: 0 ;
+}
+header{
+  background-image: url(../images/wood.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+body{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.row{
+max-width:1200px ;
+margin: auto;
+}
+.welcome{
+    position: absolute;
+    width: 1200px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+h1{
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 260px ;
+    margin-left: 100px;
+}
+p{
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+.button{
+    margin-top: 30px;
+    margin-left: 520px;
+}
+.btn {
+    font-size: 20px;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid white;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
