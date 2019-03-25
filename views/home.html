@@ -1,0 +1,133 @@
+<html>
+<title>Student Home</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet"  type="text/css" href="home.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Shadows+Into+Light" rel="stylesheet">
+<head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <div id="header_top"></div>
+                    <div id="logo"></div>
+                    <h1>ClassVue</h1>
+                <div id="header_center"></div>
+                <div id="menu_wrapper">
+                    <ul id="menu">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/schedules">Schedules</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="header_bottom">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                    <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=First slide" alt="First slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Second slide" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                    <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Third slide" alt="Third slide">
+                                    </div>
+                                </div>
+                                </div>
+                    
+        </div>
+            <div id="content">
+                <div id="content_top"></div>
+                <h2>We will help you Make your college experience easier!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Perspiciatis a laudantium repudiandae impedit explicabo, 
+                    ea, iusto deleniti dolorem quae libero iste ex dolor optio
+                 voluptatum ipsum doloremque, molestias dignissimos expedita.</p>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis a laudantium repudiandae impedit explicabo, 
+                        ea, iusto deleniti dolorem quae libero iste ex dolor optio
+                    voluptatum ipsum doloremque, molestias dignissimos expedita.</p>
+                <div id="content_center"></div>
+                <div class="center">
+                    <h2>Schedules</h2>
+                    <img src="https://www.smead.com/images/organomics/articles/1028/main.jpg">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Nostrum voluptatibus ut magnam provident quam. In vero, 
+                         sit autem ratione inventore exercitationem dicta ipsa voluptas
+                          ut magni temporibus doloremque tempore perspiciatis.
+                        <br>
+                        <br>
+                        <div class="button">
+                                <a href="/schedules" class="btn btn">Lets Start</a>
+                            </div>
+                    </p>
+                </div>
+                <div id="content_center2"></div>
+                <div class="center">
+                        <h2>View Schools</h2>
+                        <img src="https://www.smead.com/images/organomics/articles/1028/main.jpg">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nostrum voluptatibus ut magnam provident quam. In vero, 
+                            sit autem ratione inventore exercitationem dicta ipsa voluptas
+                            ut magni temporibus doloremque tempore perspiciatis.
+                            <br>
+                            <br>
+                            <div class="button">
+                                    <a href="/schedules" class="btn btn">Lets View</a>
+                                </div>
+                        </p>
+                    </div>
+                    <div class="center">
+                            <h2>View Majors</h2>
+                            <img src="https://www.smead.com/images/organomics/articles/1028/main.jpg">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Nostrum voluptatibus ut magnam provident quam. In vero, 
+                                sit autem ratione inventore exercitationem dicta ipsa voluptas
+                                ut magni temporibus doloremque tempore perspiciatis.
+                                <br>
+                                <br>
+                                <div class="button">
+                                <a href="/schedules" class="btn btn">Lets View</a>
+                            </div>
+                                
+                            </p>
+                        </div>
+            </div>
+            <div id="footer">
+
+            </div>
+
+        </div>
+    </body>
+</head>
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1} 
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block"; 
+    dots[slideIndex-1].className += " active";
+    } 
+    </script>
