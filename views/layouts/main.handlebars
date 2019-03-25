@@ -8,22 +8,19 @@
     {{!-- Google Fonts Library --}}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|ZCOOL+XiaoWei">
     {{!-- Custom Styling --}}
-    {{!-- <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8"> --}}
-    {{!-- Custom Styling --}}
-    <link rel="stylesheet" href="/styles/{{css}}" media="screen" title="no title" charset="utf-8">
-    {{!-- <title>Home Page</title> --}}
+    <link rel="stylesheet" href="styles/{{> cssReference}}" media="screen" title="no title" charset="utf-8">
+    <title>{{> title}}</title>
   </head>
 
   <body>
-    {{!-- Navigation Bar
-    <div class="row">
-      <ul class="main-nav">
-        <li class="active"><a href="home.html">Home</a></li>
-        <li ><a href="/about.html">Schedule It</a></li>
-        <li ><a href="/about.html">About Us</a></li>
-        <li ><a href="/about.html">Contact Us</a></li>
-      </ul>
-    </div> --}}
+    {{#if navBar}}
+      <div class="row">
+        <ul class="main-nav">
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/about.html">Contact Us</a></li>
+        </ul>
+      </div>
+    {{/if}}
 
     {{{body}}}
 
@@ -31,5 +28,20 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     {{!-- Bootstrap 4.2.1 JavaScript --}}
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    {{!-- Custom JavaScript based on webpage --}}
+
+    {{#if signInPage}}
+      <script>
+        $('.message a').click(function () {
+            $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+
+        $("signInBtn").click(function (event) {
+            event.preventDefault();
+            console.log("Btn click");
+        });
+      </script>
+    {{/if}}
+    
   </body>
 </html>

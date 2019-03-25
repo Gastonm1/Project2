@@ -2,10 +2,12 @@
 body{
   margin: 0 ;
   padding: 0 ;
-  background: url(../images/wood.jpg);
+  font-family: sans-serif ;
+  background-image: url(../images/wood.jpg);
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  font-family: sans-serif ;
+  background-attachment: fixed;
 }
 
 .logInbox{

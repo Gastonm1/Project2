@@ -1,45 +1,23 @@
-{{!-- <link rel="stylesheet" type="text/css" href="../public/styles/signin.css"> --}}
-
 <header>
-        <div class="row">
+  <div class="logInbox">
+    <img src="images/icon.png" class="avatar">
+    <h1>ClassVue</h1>
+    <form class="login-form">
+      <p>Username</p>
+      <input type="text" name="" placeholder="Enter Username">
+      <p>Password</p>
+      <input type="password" name="" placeholder="Enter Password">
+      <input value="Login" type="submit"><a href="/home.html"></input>
 
-            <ul class="main-nav">
-                <li><a href="/about.html">About Us</a></li>
-                <li><a href="/about.html">Contact Us</a></li>
+      <p class="message">Not Registered?<a href="#">Login</a></p>
+    </form>
+    <form class="register-form">
+      <input type="text" placeholder="New Username" />
+      <input type="text" placeholder="New Password" />
+      <input type="text" placeholder="Email" />
+      <input href="home.html" type="button" name="" value="Sign Up" />
 
-            </ul>
-        </div>
-
-        <div class="logInbox">
-            <img src="icon.png" class="avatar">
-            <h1>ClassVue</h1>
-            <form class="login-form">
-                <p>Username</p>
-                <input type="text" name="" placeholder="Enter Username">
-                <p>Password</p>
-                <input type="password" name="" placeholder="Enter Password">
-                <input value="Login" type="submit"><a href="/home.html"></input>
-
-                    <p class="message">Not Registered?<a href="#">Login</a></p>
-            </form>
-            <form class="register-form">
-                <input type="text" placeholder="New Username" />
-                <input type="text" placeholder="New Password" />
-                <input type="text" placeholder="Email" />
-                <input href="home.html" type="button" name="" value="Sign Up" />
-
-                <p class="message">Already have an account?<a href="#">SignUp</a></p>
-            </form>
-        </div>
-            <!-- jQuery 3.3.1 -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-        <script>
-            $('.message a').click(function () {
-                $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
-            });
-
-            $("signInBtn").click(function (event) {
-                event.preventDefault();
-                console.log("Btn click");
-            });
-        </script>
+      <p class="message">Already have an account?<a href="#">SignUp</a></p>
+    </form>
+  </div>
+</header>
