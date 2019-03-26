@@ -11,7 +11,7 @@ var PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, "/public")));
 
 // Handlebars
 app.engine(
@@ -19,7 +19,7 @@ app.engine(
   exphbs({
     defaultLayout: "main",
     partialsDir: [
-      "views/partials",
+      "views/partials"
     ]
   })
 );
