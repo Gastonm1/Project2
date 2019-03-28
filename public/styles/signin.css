@@ -1,0 +1,104 @@
+/* Yagmur's formatting for the signin page */
+body{
+  margin: 0 ;
+  padding: 0 ;
+  font-family: sans-serif ;
+  background-image: url(../images/wood.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logInbox{
+  margin-top: 70px;
+  width: 320px;
+  height: 420px;
+  background: black;
+  color:whitesmoke;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  opacity: 0.8;
+  padding: 70px 30px;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.signin{
+  color: white;
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.logInbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.logInbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.logInbox input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+.logInbox input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: orange;
+  font-size: 18px;
+
+}
+.register-form{
+  display: none;
+}
+a{
+  color: white;
+  margin-left: 5px;
+}
+.name{
+  margin-top: 60px;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+  font-size: 70px;
+  text-align: center;
+}
+.main-nav{
+  float: right;
+  list-style: none ;
+  margin-top: 30px;
+}
+.main-nav li {
+  display: inline;
+}
+.main-nav li a {
+  color: black;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.main-nav li a:hover
+{
+  border: 1px solid black;
+}

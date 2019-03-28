@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    {{!-- Bootstrap 4.2.1 CSS --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    {{!-- Google Fonts Library --}}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|ZCOOL+XiaoWei">
+    {{!-- Custom Styling --}}
+    <link rel="stylesheet" href="styles/{{> cssReference}}" media="screen" title="no title" charset="utf-8">
+    <title>{{> title}}</title>
+  </head>
+
+  <body>
+    {{#if navBar}}
+      <div class="row">
+        <ul class="main-nav">
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/about.html">Contact Us</a></li>
+        </ul>
+      </div>
+    {{/if}}
+
+    {{{body}}}
+
+    <!-- jQuery 3.3.1 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    {{!-- Bootstrap 4.2.1 JavaScript --}}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    {{!-- Custom JavaScript based on webpage --}}
+
+    {{#if signInPage}}
+      <script>
+        $(".message a").click(function () {
+            $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+        });
+
+        $("signInBtn").click(function (event) {
+            event.preventDefault();
+            console.log("Btn click");
+        });
+      </script>
+    {{/if}}
+    
+  </body>
+</html>
