@@ -12,9 +12,9 @@
 
     <style>
       .dropbtn {
-        background-color: #4CAF50;
+        background-color:purple;
         color: white;
-        padding: 16px;
+        padding: 40px;
         font-size: 16px;
         border: none;
       }
@@ -44,18 +44,31 @@
       
       .dropdown:hover .dropdown-content {display: block;}
       
-      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      .dropdown:hover .dropbtn {background-color: purple;}
       </style>
   </head>
 
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">School of Business 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Finance</a>
+        <a href="#">Accounting</a>
+        <a href="#">Global Economics</a>
+    <div class="dropdown">
+      <button class="dropbtn">School of Education 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
   </div>
-
+  
   <body>
 </html>
