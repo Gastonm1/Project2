@@ -1,0 +1,56 @@
+.div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+  background-size:cover;
+}
+
+div::after {
+  content: "";
+  background: url("wood.jpg");
+  background-size:cover;
+  opacity: 1.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.wrapper {
+  margin-top: 500px;
+  margin: auto;
+  position: center;
+}
+.spacing {
+  margin-top:100px;
+}
+.spacing2{
+  margin-bottom:100px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
