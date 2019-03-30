@@ -27,7 +27,7 @@ module.exports = function(app) {
     });
   });
   app.get("/about", function (req, res) {
-    res.render("about", {
+    res.render("aboutUs", {
         title: "About Us",
         css: "aboutUs.css",
         signInPage: false,
