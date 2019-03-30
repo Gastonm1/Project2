@@ -17,6 +17,7 @@ body{
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  opacity: .85;
 }
 .row{
 max-width:1200px ;
@@ -28,30 +29,137 @@ margin: auto;
     margin-left: 0px;
     margin-top: 0px;
 }
-h1{
+.welcome h1{
     color: black;
     font-size: 70px;
     text-align: center;
-    margin-top: 260px ;
-    margin-left: 100px;
+    margin-left: 700px;
+    margin-top:100px;
 }
-p{
+.welcome p{
     color:black;
     font-size: 20px;
     text-align: center;
-    margin-top: 40px;
-    margin-left: 120px;
+    margin-left: 600px;
+    margin-top: 50px;
 }
-.button{
-    margin-top: 30px;
-    margin-left: 520px;
+
+.logInbox{
+    float: left;
+    margin-top: 350px;
+    margin-left: 300px;
+    width: 320px;
+    height: 420px;
+    background: black;
+    color:whitesmoke;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    }
+.avatar{
+     width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     position: absolute;
+     top: -50px;
+     left: calc(50% - 50px);
+        }
+.signin{
+  color: white;
+    }      
+.avatar h1{
+        margin: 0;
+        padding: 0 0 20px;
+        text-align: center;
+        font-size: 22px;
 }
-.btn {
-    font-size: 20px;
+
+.logInbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    }
+.logInbox input{
+    width: 100%;
+    margin-bottom: 20px;
+    }
+.logInbox input[type="text"], input[type="password"]
+    {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
     color: white;
-    padding: 10px 30px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 1px solid white;
+    font-size: 16px;
+    }
+.logInbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: orange;
+    font-size: 18px;
+    
+    }
+.register-form{
+    display: none;
+    }
+.name{
+    margin-top: 60px;
     font-family: "PT Sans Narrow", sans-serif;
-}
+    color: black;
+    font-size: 70px;
+    text-align: center;
+        }
+.main-nav{
+    float: right;
+    list-style: none ;
+    margin-top: 30px;
+        }
+.main-nav li {
+    display: inline;
+        }
+.main-nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+        }
+        
+.main-nav li a:hover
+        {
+    border: 1px solid black;
+        }
+    
+
+
+        @media only screen and (min-width: 960px) {
+            /* styles for browsers larger than 960px; */
+           
+        }
+        @media only screen and (min-width: 1440px) {
+            /* styles for browsers larger than 1440px; */
+        }
+        @media only screen and (min-width: 2000px) {
+            /* for sumo sized (mac) screens */
+        }
+        @media only screen and (max-device-width: 480px) {
+        /* styles for mobile browsers smaller than 480px; (iPhone) */
+        }
+        @media only screen and (device-width: 768px) {
+        /* default iPad screens */
+        }
+        /* different techniques for iPad screening */
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+        /* For portrait layouts only */
+        }
+    
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        /* For landscape layouts only */
+        }
+    
+
+    

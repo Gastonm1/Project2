@@ -6,17 +6,24 @@
     {{!-- Bootstrap 4.2.1 CSS --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     {{!-- Google Fonts Library --}}
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|ZCOOL+XiaoWei">
     {{!-- Custom Styling --}}
     <link rel="stylesheet" href="styles/{{> cssReference}}" media="screen" title="no title" charset="utf-8">
+    {{!-- Icon --}}
+    <link rel="icon" href="https://banner2.kisspng.com/20180413/vze/kisspng-square-academic-cap-graduation-ceremony-computer-i-graduation-hat-5ad0ed7d9f0f18.9998680115236417256515.jpg">
     <title>{{> title}}</title>
+    {{!--icon--}}
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    {{!--meta--}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
     {{#if navBar}}
       <div class="row">
         <ul class="main-nav">
-            <li><a href="/about.html">About Us</a></li>
             <li><a href="/about.html">Contact Us</a></li>
         </ul>
       </div>
@@ -36,7 +43,11 @@
             $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
         });
 
-        $("signInBtn").click(function (event) {
+        $(".loginBtn").click(function (event) {
+            event.preventDefault();
+            console.log("Btn click");
+        });
+        $(".SignBtn").click(function (event) {
             event.preventDefault();
             console.log("Btn click");
         });

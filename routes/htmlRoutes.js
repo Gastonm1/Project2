@@ -5,7 +5,7 @@ module.exports = function(app) {
     res.render("index", {
         title: "Home",
         css: "styles.css",
-        signInPage: false,
+        signInPage: true,
         navBar: false
     });
   });
@@ -14,10 +14,35 @@ module.exports = function(app) {
     res.render("signin", {
         title: "Sign In or Sign Up",
         css: "signin.css",
-        signInPage: true,
+        signInPage: false,
         navBar: true
     });
   });
+  app.get("/studenthub", function (req, res) {
+    res.render("studenthub", {
+        title: "Student Hub",
+        css: "student.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
+  app.get("/about", function (req, res) {
+    res.render("about", {
+        title: "About Us",
+        css: "aboutUs.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
+  app.get("/contact", function (req, res) {
+    res.render("contact", {
+        title: "Contact Us",
+        css: "contact.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
+
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
