@@ -1,34 +1,56 @@
-.dropbtn {
-  background-color:purple;
-  color: white;
-  padding: 40px;
-  font-size: 16px;
-  border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+.div {
+  width: 200px;
+  height: 200px;
   display: block;
+  position: relative;
+  background-size:cover;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+div::after {
+  content: "";
+  background: url("wood.jpg");
+  background-size:cover;
+  opacity: 1.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.wrapper {
+  margin-top: 500px;
+  margin: auto;
+  position: center;
+}
+.spacing {
+  margin-top:100px;
+}
+.spacing2{
+  margin-bottom:100px;
+}
 
-.dropdown:hover .dropbtn {background-color: purple;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
