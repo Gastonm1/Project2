@@ -30,14 +30,14 @@ margin: auto;
     margin-top: 0px;
 }
 .welcome h1{
-    color: black;
+    color: white;
     font-size: 70px;
     text-align: center;
     margin-left: 700px;
     margin-top:100px;
 }
 .welcome p{
-    color:black;
+    color:white;
     font-size: 20px;
     text-align: center;
     margin-left: 600px;
@@ -70,10 +70,10 @@ margin: auto;
   color: white;
     }      
 .avatar h1{
-        margin: 0;
-        padding: 0 0 20px;
-        text-align: center;
-        font-size: 22px;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
 }
 
 .logInbox p{
@@ -132,9 +132,12 @@ margin: auto;
 .main-nav li a:hover
         {
     border: 1px solid black;
-        }
-    
+ }
 
-
-       
-    
+ footer {
+        
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    float: bottom;
+ }

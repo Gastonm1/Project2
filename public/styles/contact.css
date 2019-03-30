@@ -119,5 +119,5 @@ button:hover{
     color: white;
     text-align: center;
     font-size: 15px;
-    margin-top: 700px;
+    float: bottom;
     }
