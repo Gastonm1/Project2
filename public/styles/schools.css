@@ -8,7 +8,7 @@
 
 div::after {
   content: "";
-  background: url("wood.jpg");
+  background: url("../images/wood.jpg");
   background-size:cover;
   opacity: 1.5;
   top: 0;
