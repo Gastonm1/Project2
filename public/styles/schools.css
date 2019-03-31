@@ -4,7 +4,7 @@
   display: block;
   position: relative;
   background-size:cover;
-}
+  }
 
 div::after {
   content: "";
@@ -17,7 +17,7 @@ div::after {
   right: 0;
   position: absolute;
   z-index: -1;   
-}
+  }
 
 .wrapper {
   margin-top: 500px;
