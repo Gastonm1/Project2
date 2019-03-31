@@ -58,6 +58,15 @@ module.exports = function(app) {
         navBar: false
     });
   });
+  // added schedule route
+  app.get("/schedule", function (req, res) {
+    res.render("schedule", {
+        title: "Schedule",
+        css: "style.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
