@@ -8,7 +8,7 @@
 
 div::after {
   content: "";
-  background: url("wood.jpg");
+  background: url("../images/wood.jpg");
   background-size:cover;
   opacity: 1.5;
   top: 0;
@@ -24,9 +24,11 @@ div::after {
   margin: auto;
   position: center;
 }
+
 .spacing {
   margin-top:100px;
 }
+
 .spacing2{
   margin-bottom:100px;
 }
