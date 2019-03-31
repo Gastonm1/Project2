@@ -1,95 +1,104 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    background: url(../images/wood.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: rgba(238, 238, 238, 0.81);
-    background-position: center;
-    font-family: 'Quattrocento Sans', sans-serif;
-    color: white;
-    }
-    .about{
-        width: 100%;
-        padding:40px 0;
-    }
-    .About-info{
-max-width: 650px;
-overflow: hidden;
-padding: 0 20px;
-margin: auto;
-    }
- h1{
-    text-align: center;
-    font-size: 45px;
-    margin-top: 100px;
-    }
-    .section{
-        width: 100px;
-        height: 3px;
-        background: white;
-        margin: auto;
-    }
-    .row{
-    display: flex;
-    flex-wrap: wrap;
-    }
-    .aboutUs p{
-        font-size: 30px;
-        margin-top: 100px;
-    }
-    nav {
+body, html {
+  margin: 0;
+  padding: 0;
+  background: url(../images/wood.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(238, 238, 238, 0.81);
+  background-position: center;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: white;
+}
 
-        margin-top: 15px;
-        position: fixed;
-        top: 0;
-        left:0;
-        z-index:99;
-    }
-    .sidebar h2{
-        color: white;
-    }
-    .sidebar{
-        font-size: 30px;
-        font-family: 'Quattrocento Sans', sans-serif;
-        width: 20%;
-            
-    }
+.about {
+  width: 100%;
+  padding:40px 0;
+}
+
+.About-info {
+  max-width: 650px;
+  overflow: hidden;
+  padding: 0 20px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 100px;
+}
+
+.section {
+  width: 100px;
+  height: 3px;
+  background: white;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.aboutUs p {
+  font-size: 30px;
+  margin-top: 100px;
+}
+
+nav {
+  margin-top: 15px;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index:99;
+}
+
+.sidebar h2 {
+  color: white;
+}
+
+.sidebar {
+  font-size: 30px;
+  font-family: 'Quattrocento Sans', sans-serif;
+  width: 20%;            
+}
+    
+ul {
+  list-style: none;
+  margin-top: 155px;
+}
       
-    ul{
-    list-style: none;
-    margin-top: 155px;
-    }
-        
-    a{
-        font-size: 26px;
-        text-decoration: none;
-        line-height: 1;
-    }
-        
-    a span{
-        display: inline-block;
-        vertical-align: middle;
-        transition: all 0.5s;
-        color: white;
-    }
-    a span:nth-child(2){
-        max-width: 0px;
-        overflow: hidden;
-    }
-    .links:hover a span{
-    max-width: 115px;
-    color:white;
-    }
-        
-    .links:hover a:hover span{
-        max-width:115px;
-        color:red;
-    }
-    .footer {
-        
-        color: white;
-        text-align: center;
-        font-size: 15px;
-        float: bottom;
-        }
+a {
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1;
+}
+      
+a span {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.5s;
+  color: white;
+}
+
+a span:nth-child(2) {
+  max-width: 0px;
+  overflow: hidden;
+}
+
+.links:hover a span {
+  max-width: 115px;
+  color:white;
+}
+      
+.links:hover a:hover span {
+  max-width:115px;
+  color:red;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 150px;
+}
