@@ -1,4 +1,4 @@
-.div {
+/* .div {
   width: 200px;
   height: 200px;
   display: block;
@@ -18,7 +18,84 @@ div::after {
   right: 0;
   position: absolute;
   z-index: -1;   
+
+ */
+ 
+ *{
+  background:url(/public/images/wood.jpg);
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+ }
+
+
+.middle{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-#accordion{
-  margin-bottom: 300px;
-  }
+.menu{
+  width: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+
+}
+.item{
+  border-top: 1px solid orange;
+  overflow: hidden;
+}
+.btn{
+  display: block;
+  padding: 16px 20px;
+  background: white;
+  color: black;
+  position: relative;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  transform: rotate(45deg);
+}
+.paragraph{
+  background: #333;
+  overflow: hidden;
+  transition: max-height 0.3;
+  max-height: 0;
+}
+.paragraph p{
+  display: block;
+  padding: 16px 26px;
+  color: white;
+  font-size: 14px;
+  margin:4px 0;
+  position: relative;
+}
+input{
+  float: left;
+}
+.paragraph p:before{
+content: "";
+position: absolute;
+width: 6px;
+height: 100%;
+background: orange;
+top: 0;
+left:0;
+transition:0.3s;
+opacity: 0;
+
+}
+.btn:hover{
+  background-color: orange;
+}
+.paragraph p:hover:before{
+  opacity: 1;
+}
+.item:target .paragraph{
+  max-height: 30em;
+  transition:0.3s;
+}
