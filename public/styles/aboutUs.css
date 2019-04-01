@@ -6,7 +6,7 @@ body, html {
   background-attachment: fixed;
   background-color: rgba(238, 238, 238, 0.81);
   background-position: center;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
   color: white;
 }
 
@@ -59,7 +59,7 @@ nav {
 
 .sidebar {
   font-size: 30px;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
   width: 20%;            
 }
     

@@ -21,4 +21,14 @@ module.exports = function(app) {
       res.json(dbExample);
     });
   });
+
+  app.get("/api/newUserEntry", function(req, res) {
+    console.log(req.body);
+
+    
+    
+    // db.Student.create(req.body).then(function(dbExample) {
+    //   res.json(dbExample);
+    // });
+  });
 };

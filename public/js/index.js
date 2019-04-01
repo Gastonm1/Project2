@@ -1,8 +1,18 @@
 // Get references to page elements
-var $exampleText = $("#example-text");
-var $exampleDescription = $("#example-description");
-var $submitBtn = $("#submit");
-var $exampleList = $("#example-list");
+var $loginEmail = $("#loginEmail");
+var $loginPassword = $("#loginPassword");
+var $loginBtn = $("#loginBtn");
+
+var $signupName = $("#signupName");
+var $signupEmail = $("#signupEmail");
+var $signupPassword = $("#signupPassword");
+var $signupBtn = $("#signupBtn");
+
+
+// var $exampleText = $("#example-text");
+// var $exampleDescription = $("#example-description");
+// var $submitBtn = $("#submit");
+// var $exampleList = $("#example-list");
 
 // The API object contains methods for each kind of request we'll make
 var API = {
@@ -27,6 +37,10 @@ var API = {
       url: "api/examples/" + id,
       type: "DELETE"
     });
+  },
+
+  saveNewUser: function() {
+    window.location = '/school';
   }
 };
 
@@ -94,6 +108,14 @@ var handleDeleteBtnClick = function() {
   });
 };
 
+var handleSignUpBtnClick = function(event) {
+  event.preventDefault();
+
+  API.saveNewUser();
+};
+
 // Add event listeners to the submit and delete buttons
-$submitBtn.on("click", handleFormSubmit);
-$exampleList.on("click", ".delete", handleDeleteBtnClick);
+// $submitBtn.on("click", handleFormSubmit);
+// $exampleList.on("click", ".delete", handleDeleteBtnClick);
+
+$signupBtn.on("click", handleSignUpBtnClick);

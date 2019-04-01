@@ -51,12 +51,19 @@ module.exports = function(app) {
     });
   });
   app.get("/school", function (req, res) {
-    res.render("school", {
+    db.Student.findAll({ where: { id: 1 } }).then(function(dbStudent) {
+      var name = dbStudent[0].dataValues.name;
+
+      res.render("school", {
         title: "Schools",
         css: "schools.css",
         signInPage: false,
-        navBar: false
+        navBar: false,
+        studentName: name
     });
+    });
+
+    
   });
   // added schedule route
   app.get("/schedule", function (req, res) {
