@@ -4,19 +4,32 @@
     <meta charset="utf-8">
 
     {{!-- Bootstrap 4.2.1 CSS --}}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     {{!-- Google Fonts Library --}}
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|ZCOOL+XiaoWei">
     {{!-- Custom Styling --}}
     <link rel="stylesheet" href="styles/{{> cssReference}}" media="screen" title="no title" charset="utf-8">
+    {{!-- Icon --}}
+    <link rel="icon" href="https://banner2.kisspng.com/20180413/vze/kisspng-square-academic-cap-graduation-ceremony-computer-i-graduation-hat-5ad0ed7d9f0f18.9998680115236417256515.jpg">
     <title>{{> title}}</title>
+    {{!--icon--}}
+    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/education/512/faculty-512.png">
+    <link rel="icon" href="https://static.thenounproject.com/png/2402-200.png">
+    {{!--meta--}}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{! styling pt 2 }}
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/magnific-popup.css"> 
   </head>
 
   <body>
     {{#if navBar}}
       <div class="row">
         <ul class="main-nav">
-            <li><a href="/about.html">About Us</a></li>
             <li><a href="/about.html">Contact Us</a></li>
         </ul>
       </div>
@@ -29,16 +42,16 @@
     {{!-- Bootstrap 4.2.1 JavaScript --}}
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     {{!-- Custom JavaScript based on webpage --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="assets/javascript/vendor/jquery.magnific-popup.min.js"></script>
+    
 
     {{#if signInPage}}
       <script>
         $(".message a").click(function () {
             $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
-        });
-
-        $("signInBtn").click(function (event) {
-            event.preventDefault();
-            console.log("Btn click");
         });
       </script>
     {{/if}}

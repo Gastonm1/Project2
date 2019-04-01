@@ -1,0 +1,147 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background: url(../images/notebook.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: rgba(238, 238, 238, 0.81);
+  background-position: center;
+  font-family:  "Quattrocento Sans", sans-serif;
+}
+
+.content {
+  overflow-y: scroll;
+  height: 500px;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav {
+  margin-top: 15px;
+  position: fixed;
+  top: 0;
+  left:0;
+  z-index:99;
+}
+
+.sidebar h2 {
+  color: white;
+}
+
+.sidebar {
+  font-size: 30px;
+  font-family: "Quattrocento Sans", sans-serif;
+  width: 20%;    
+}
+
+ul {
+  list-style: none;
+  margin-top: 155px;
+}
+
+a {
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+a span {
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.5s;
+  color: white;
+}
+
+a span:nth-child(2) {
+  max-width: 0px;
+  overflow: hidden;
+}
+
+.links:hover a span {
+  max-width: 115px;
+  color:orange;
+}
+
+.links:hover a:hover span {
+  max-width:115px;
+  color:red;
+}
+
+.logoutLblPos {
+
+  position:fixed;
+  right:10px;
+  top:5px;
+}
+
+#submit2 {
+  background-color: white;
+  transition: all .5s;
+}
+
+#submit2:hover {
+  color: orange;
+}
+
+.infos {
+  text-align: center;
+}
+
+#welcome {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.stuff {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.info {
+  padding: 0px 10px;
+  display: inline-block;
+  margin-left: 10%;
+  padding: 20px;
+  box-sizing:border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.info:hover {
+  background-color: orange;
+}
+
+.info i {
+  color: black;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.info h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.info p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer {    
+color: white;
+text-align: center;
+font-size: 15px;
+margin-top: 120px;
+}
+#contact{
+  font-size: 15px;
+}
+#gpa{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}

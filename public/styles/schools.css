@@ -1,0 +1,44 @@
+.div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+  background-size:cover;
+}
+
+div::after {
+  content: "";
+  background: url("../images/wood.jpg");
+  background-size:cover;
+  opacity: 1.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.wrapper {
+  margin-top: 500px;
+  margin: auto;
+  position: center;
+}
+#business{
+  color: white;
+}
+.spacing {
+  margin-top:100px;
+}
+
+.spacing2{
+  margin-bottom:100px;
+}
+
+.page-footer {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 220px;
+  font-family: "PT Sans Narrow", sans-serif;
+  }

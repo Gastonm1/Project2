@@ -5,7 +5,7 @@ module.exports = function(app) {
     res.render("index", {
         title: "Home",
         css: "styles.css",
-        signInPage: false,
+        signInPage: true,
         navBar: false
     });
   });
@@ -14,11 +14,74 @@ module.exports = function(app) {
     res.render("signin", {
         title: "Sign In or Sign Up",
         css: "signin.css",
-        signInPage: true,
+        signInPage: false,
         navBar: true
     });
   });
+  app.get("/studenthub", function (req, res) {
+    db.Student.findAll({ where: { id: 1 } }).then(function(dbStudent) {
+      var name = dbStudent[0].dataValues.name;
 
+      res.render("studenthub", {
+        title: "Student Hub",
+        css: "student.css",
+        signInPage: false,
+        navBar: false,
+        studentName: name
+    });
+    });  
+  });
+  app.get("/about", function (req, res) {
+    res.render("aboutUs", {
+        title: "About Us",
+        css: "aboutUs.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
+  app.get("/contact", function (req, res) {
+    res.render("contact", {
+        title: "Contact Us",
+        css: "contact.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
+  app.get("/majors", function (req, res) {
+    res.render("majors", {
+        title: "Majors",
+        css: "majors.css",
+        signInPage: false,
+        navBar: false
+    });
+  });
+  app.get("/school", function (req, res) {
+    db.Student.findAll({ where: { id: 1 } }).then(function(dbStudent) {
+      var name = dbStudent[0].dataValues.name;
+
+      res.render("school", {
+        title: "Schools",
+        css: "schools.css",
+        signInPage: false,
+        navBar: false,
+        studentName: name
+    });
+    });    
+  });
+  // added schedule route
+  app.get("/schedule", function (req, res) {
+    db.Student.findAll({ where: { id: 1 } }).then(function(dbStudent) {
+      var name = dbStudent[0].dataValues.name;
+
+      res.render("schedule", {
+        title: "Schedule",
+        css: "schedule.css",
+        signInPage: false,
+        navBar: false,
+        studentName: name
+    });
+    });   
+  });
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {

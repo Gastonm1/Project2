@@ -1,0 +1,48 @@
+
+    {{>nav}}
+
+<div class="schedule">
+  <h1>Welcome to Your ClassVue Schedule Page {{{ studentName }}}</h1>
+  <p class="intro">Check your schedule for the classes you've signed up for the semester.</p>
+</div> 
+<br>
+<br>
+<br>
+<div style="overflow-x:auto;">
+<div class="container table-responsive">  
+  
+    <h2 class="sched">Your Class Schedule</h2>         
+    <table class="table">
+      <thead class="labels">
+        <tr>
+          <th>Class</th>
+          <th>Location</th>
+          <th>Time</th>
+          <th>Credits</th>
+        </tr>
+      </thead>
+      <tbody class="info">
+        <tr>
+          <td>Financial Accounting</td>
+          <td>SI 202</td>
+          <td>M/W 8:00 am - 9:30 am</td>
+          <td>3</td>
+        </tr>
+        <tr>
+            <td>Economics 101</td>
+            <td>SI 303</td>
+            <td>M/W 10:00 am - 11:30 am</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Financial Reporting</td>
+            <td>SI 400</td>
+            <td>T/Th 1:00 pm - 2:30 pm</td>
+            <td>3</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>
+
+{{>footer}} 
