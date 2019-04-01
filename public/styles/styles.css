@@ -152,10 +152,11 @@ body {
 .message{
   font-size: 16px;
 }
+
 .page-footer {      
   color: white;
   text-align: center;
   font-size: 15px;
- float: top;
+  margin-top:200px;
   font-family: "PT Sans Narrow", sans-serif;
 }
