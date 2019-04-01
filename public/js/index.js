@@ -41,6 +41,9 @@ var API = {
 
   saveNewUser: function() {
     window.location = '/school';
+  },
+  loginUser: function() {
+    window.location = '/studenthub';
   }
 };
 
@@ -114,8 +117,15 @@ var handleSignUpBtnClick = function(event) {
   API.saveNewUser();
 };
 
+var handleLoginBtnClick = function(event) {
+  event.preventDefault();
+
+  API.loginUser();
+};
+
 // Add event listeners to the submit and delete buttons
 // $submitBtn.on("click", handleFormSubmit);
 // $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 $signupBtn.on("click", handleSignUpBtnClick);
+$loginBtn.on("click", handleLoginBtnClick);
