@@ -50,9 +50,9 @@ module.exports = function(app) {
         navBar: false
     });
   });
-  app.get("/school", function (req, res) {
-    res.render("school", {
-        title: "Schools",
+  app.get("/classes", function (req, res) {
+    res.render("classes", {
+        title: "Classes",
         css: "schools.css",
         signInPage: false,
         navBar: false
