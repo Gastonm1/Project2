@@ -51,7 +51,7 @@ module.exports = function(app) {
     });
   });
   app.get("/classes", function (req, res) {
-    res.render("classes.html", {
+    res.render("views/layouts/classes.html", {
         title: "Classes",
         css: "schools.css",
         signInPage: false,
