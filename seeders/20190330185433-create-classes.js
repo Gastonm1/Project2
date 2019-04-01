@@ -12,36 +12,30 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-   return queryInterface.bulkInsert(
-    'Students',
+  return queryInterface.bulkInsert(
+    'Classes',
     [
       {
-        name: 'David Scott',
-        email: 'davidscott@gmail.com',
-        password: '3123123121',
-        classes: "1,3,5",
-        school_id: 1,
+        name: 'Class 1',
+        description: 'Class 1 description.',
+        timeFrame: '3:00 pm - 6:00 pm',
         major_id: 1,
         createdAt: Sequelize.literal('NOW()'),
         updatedAt: Sequelize.literal('NOW()')
       },
       {
-        name: 'Marques Gaston',
-        email: 'marques@gmail.com',
-        password: '3123123121',
-        classes: "1,3,5",
-        school_id: 1,
-        major_id: 2,
+        name: 'Class 2',
+        description: 'Class 2 description.',
+        timeFrame: '3:00 pm - 6:00 pm',
+        major_id: 1,
         createdAt: Sequelize.literal('NOW()'),
         updatedAt: Sequelize.literal('NOW()')
       },
       {
-        name: 'Mike Plass',
-        email: 'mike@gmail.com',
-        password: '3123123121',
-        classes: "1,3,5",
-        school_id: 2,
-        major_id: 3,
+        name: 'Class 3',
+        description: 'Class 3 description.',
+        timeFrame: '3:00 pm - 6:00 pm',
+        major_id: 1,
         createdAt: Sequelize.literal('NOW()'),
         updatedAt: Sequelize.literal('NOW()')
       },
@@ -58,6 +52,5 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-   return queryInterface.bulkDelete('Students', null, {});
   }
 };
