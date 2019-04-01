@@ -1,200 +1,216 @@
-<!DOCTYPE HTML>
-<head>
-  <meta charset="utf-8">
-  <title>Continue Your Education</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="assets/css/vendor/magnific-popup.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="icon" href="https://static.thenounproject.com/png/2402-200.png">
-  <style>
-  body{
-    background-image: url("wood.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-</style>
-</head>
+<div id="header"></div>
+<section class="styles-school white-text pad">
+  <div class="container text-center">
+    <h1>Choose Your Wu-School</h1>
+  </div>
+</section>
 
+<div class="container white-text">
+   <div class="row">
+       <div class="col-3 mb-5">
+         <div class="list-group" id="list-tab" role="tablist">
+           <a class="btn btn-primary list-group-item list-group-item-action active" id="list-home-list" data-toggle="collapse" href="#shaolin"
+             role="button" aria-expanded="false" aria-controls="shaolin">Shaolin School of Business</a>
+           <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+             role="tab" aria-controls="profile">The RZA School of Education</a>
+           <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
+             role="tab" aria-controls="messages">Ghostface School of Killah Art</a>
+           <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
+             role="tab" aria-controls="settings">The 36 Chambers School of Law</a>
+           <a class="list-group-item list-group-item-action" id="list-engineering-list" data-toggle="list" href="#list-engineering"
+             role="tab" aria-controls="engineering">The GZA College of Engineering</a>
+         </div>
+       </div>
 
-<body>
-  <div id="header"></div>
-  <section class="styles-school white-text pad">
-    <div class="container text-center">
-      <h1>Choose Your Wu-School</h1>
-    </div>
-  </section>
+       <div class="col-7 mb-5 mt-0 box-bg">
+         <div class="tab-content" id="shaolin" >
+           {{!-- <div class="tab-pane fade show active" id="shaolin" role="tabpanel" aria-labelledby="list-home-list"> --}}
+               The Shaolin School of Business is a global leader in management education, renowned for its distinctive thought leadership and pioneering approach to learning.
+               Shaolin offers an innovative portfolio of programs: four Full-Time undergraduate programs including leading one-year program and joint degree programs with the engineering, law and medical schools; a Part-Time MBA Program;
+               <br>
+               <br>
+               Check out some of our majors below:
 
-  <div class="container white-text">
-    <div class="row">
-        <div class="col-3 mb-5">
-          <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home"
-              role="tab" aria-controls="home">Shaolin School of Business</a>
-            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
-              role="tab" aria-controls="profile">The RZA School of Education</a>
-            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
-              role="tab" aria-controls="messages">Ghostface School of Killah Art</a>
-            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
-              role="tab" aria-controls="settings">The 36 Chambers School of Law</a>
-            <a class="list-group-item list-group-item-action" id="list-engineering-list" data-toggle="list" href="#list-engineering"
-              role="tab" aria-controls="engineering">The GZA College of Engineering</a>
-          </div>
+             <br>
+             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">Finance</button>
+             <!-- Finance Degree Modal -->     
+{{!-- <div class="container white-text">
+  <div class="row">
+      <div class="col-3 mb-5">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home"
+            role="tab" aria-controls="home">Shaolin School of Business</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile"
+            role="tab" aria-controls="profile">The RZA School of Education</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages"
+            role="tab" aria-controls="messages">Ghostface School of Killah Art</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings"
+            role="tab" aria-controls="settings">The 36 Chambers School of Law</a>
+          <a class="list-group-item list-group-item-action" id="list-engineering-list" data-toggle="list" href="#list-engineering"
+            role="tab" aria-controls="engineering">The GZA College of Engineering</a>
         </div>
+      </div>
 
-        <div class="col-7 mb-5 mt-0 box-bg">
-          <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <p>
-                The Shaolin School of Business is a global leader in management education, renowned for its distinctive thought leadership and pioneering approach to learning. 
-                Shaolin offers an innovative portfolio of programs: four Full-Time undergraduate programs including leading one-year program and joint degree programs with the engineering, law and medical schools; a Part-Time MBA Program;
-                <br>
-                <br>
-                Check out some of our majors below:
-              </p>
+      <div class="col-7 mb-5 mt-0 box-bg">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            <p>
+              The Shaolin School of Business is a global leader in management education, renowned for its distinctive thought leadership and pioneering approach to learning. 
+              Shaolin offers an innovative portfolio of programs: four Full-Time undergraduate programs including leading one-year program and joint degree programs with the engineering, law and medical schools; a Part-Time MBA Program;
               <br>
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">Finance</button>
-              <!-- Finance Degree Modal -->
-              <div class="modal fade" id="myModal1" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <div class="text-align">
-                        <button type="button" class="close" class="btn btn-primary text-left" data-dismiss="modal"></button>
-                        <h4 class="modal-title">Finance</h4>
-                      </div>  
-                    </div>
-                    <div class="modal-body">
-                      <p>Specializes with the allocation of assets and liabilities over space and time, typically under conditions of risk or uncertainty. Typically can be viewed as the art of money management. You may have three focus areas: Public Finance, Corporate Finance, Personal Finance</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger text-left" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-info right" data-dismiss="modal">Register For Classes</button>
-                    </div>
-                  </div>  
-                </div>
-              </div>
-
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">Accounting</button>
-              <!-- Accounting Degree Modal -->
-              <div class="modal fade" id="myModal2" role="dialog">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <div class="text-align">
-                        <button type="button" class="close text-left" data-dismiss="modal"></button>
-                        <h4 class="modal-title">Accounting</h4>
-                      </div>  
-                    </div>
-                    <div class="modal-body">
-                      <p>If you are considering an accounting degree, you should have an aptitude and interest in mathematics. Successful accountants must be able to analyze, compare, and interpret facts and figures quickly. They must also possess the skills necessary to clearly communicate their results to clients and managers. Above all, maintaining high standards of integrity are especially important.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-info right" data-dismiss="modal">Register For Classes</button>
-                    </div>
+              <br>
+              Check out some of our majors below:
+            </p>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">Finance</button>
+            <!-- Finance Degree Modal -->
+            <div class="modal fade" id="myModal1" role="dialog">
+              <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="text-align">
+                      <button type="button" class="close" class="btn btn-primary text-left" data-dismiss="modal"></button>
+                      <h4 class="modal-title">Finance</h4>
+                    </div>  
                   </div>
-                </div>
+                  <div class="modal-body">
+                    <p>Specializes with the allocation of assets and liabilities over space and time, typically under conditions of risk or uncertainty. Typically can be viewed as the art of money management. You may have three focus areas: Public Finance, Corporate Finance, Personal Finance</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger text-left" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info right" data-dismiss="modal">Register For Classes</button>
+                  </div>
+                </div>  
               </div>
+            </div>
 
-              <!-- Global Economics Modal -->
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">Global Economics</button>
-              <div class="modal fade" id="myModal3" role="dialog">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <div class="text-align">
-                        <button type="button" class="close" data-dismiss="modal"></button>
-                        <h4 class="modal-title">Global Economics</h4>
-                      </div>  
-                    </div>
-                    <div class="modal-body">
-                      <p>An undergraduate degree in global economics involves the interdisciplinary study of economics, foreign language and international banking. Many bachelor's degree programs in global economics allow students to focus on particular geographic regions and often include study abroad opportunities. The final year of the program typically includes capstone projects or seminars that offer in-depth analyses of specific economic issues.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-info right" data-dismiss="modal">Register For Classes</button>
-                    </div>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal2">Accounting</button>
+            <!-- Accounting Degree Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="text-align">
+                      <button type="button" class="close text-left" data-dismiss="modal"></button>
+                      <h4 class="modal-title">Accounting</h4>
+                    </div>  
+                  </div>
+                  <div class="modal-body">
+                    <p>If you are considering an accounting degree, you should have an aptitude and interest in mathematics. Successful accountants must be able to analyze, compare, and interpret facts and figures quickly. They must also possess the skills necessary to clearly communicate their results to clients and managers. Above all, maintaining high standards of integrity are especially important.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info right" data-dismiss="modal">Register For Classes</button>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-              <p>
-                  This bachelor's degree program builds on the foundations of early childhood development best practices while also preparing you to become a leader in the early childhood field. 
-                  Graduates can pursue opportunities in many different arenas, from operating or owning their own early childhood program to managing an early childhood agency or organization.
-                  <br>
-                  <br>
-                  A sampling of our majors below:
-              </p>
-              <br>
-              <ul>
-                  <li><a class="btn disabled" href="#finanace">Elementary Education</a></li>
-                  <li><a class="btn disabled" href="#accounting">Community Counseling</a></li>
-                  <li><a class="btn disabled" href="#global">Special Education</a></li>
-              </ul>
+            <!-- Global Economics Modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal3">Global Economics</button>
+            <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <div class="text-align">
+                      <button type="button" class="close" data-dismiss="modal"></button>
+                      <h4 class="modal-title">Global Economics</h4>
+                    </div>  
+                  </div>
+                  <div class="modal-body">
+                    <p>An undergraduate degree in global economics involves the interdisciplinary study of economics, foreign language and international banking. Many bachelor's degree programs in global economics allow students to focus on particular geographic regions and often include study abroad opportunities. The final year of the program typically includes capstone projects or seminars that offer in-depth analyses of specific economic issues.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info right" data-dismiss="modal">Register For Classes</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-              <p>
-                  Ghostface School Killah of Art is a school located in Staten Island that is well-known for its research-intensive programs in architecture and design. 
-                  Ghostface School consistently ranks as one of the best art colleges in the US. The school prides itself on teaching practical skills and encouraging their budding artists’ visions.
-                  <br>
-                  <br>
-                  A sampling of our majors below:
-              </p>
-              <br>
-              <ul>
-                  <li><a class="btn disabled" href="#finanace">Art History</a></li>
-                  <li><a class="btn disabled" href="#accounting">Performing Arts</a></li>
-                  <li><a class="btn disabled" href="#global">Fine Art</a></li>
-              </ul>
-            </div>
-            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-              <p>
-                  At this highly ranked law school, grades no longer exist. 
-                  In fact, students do not earn any grades at all during their first term at Yale Law School; afterwards, they are graded only by honors, credit or failure. 
-                  Class sizes are small, often with less than 15 students. 
-                  <br>
-                  <br>
-                  A sampling of our majors below:
-              </p>
-              <br>
-              <ul>
-                  <li><a class="btn disabled" href="#finanace">History of Law</a></li>
-                  <li><a class="btn disabled" href="#accounting">Corporate Law</a></li>
-                  <li><a class="btn disabled" href="#global">Intellectual Property & Technology Law</a></li>
-              </ul>
-            </div>
+          </div>
 
-            <div class="tab-pane fade" id="list-engineering" role="tabpanel" aria-labelledby="list-engineering-list">
-              <p>
-                  The College of Engineering has about 40 research centers and institutes where students can get involved.
-                  Students at the GZA College of Engineering can complete an advanced degree in eight areas, including Industrial Engineering & Operations Research and Applied Science & Technology.
-                  <br>
-                  <br>
-                  A sampling of our majors below:
-              </p>
-              <br>
-              <ul>
-                  <li><a class="btn disabled" href="#finanace">Computer Science</a></li>
-                  <li><a class="btn disabled" href="#accounting">Bio-Medical Engineering</a></li>
-                  <li><a class="btn disabled" href="#global">Electrical Engineering</a></li>
-              </ul>
-            </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            <p>
+                This bachelor's degree program builds on the foundations of early childhood development best practices while also preparing you to become a leader in the early childhood field. 
+                Graduates can pursue opportunities in many different arenas, from operating or owning their own early childhood program to managing an early childhood agency or organization.
+                <br>
+                <br>
+                A sampling of our majors below:
+            </p>
+            <br>
+            <ul>
+                <li><a class="btn disabled" href="#finanace">Elementary Education</a></li>
+                <li><a class="btn disabled" href="#accounting">Community Counseling</a></li>
+                <li><a class="btn disabled" href="#global">Special Education</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            <p>
+                Ghostface School Killah of Art is a school located in Staten Island that is well-known for its research-intensive programs in architecture and design. 
+                Ghostface School consistently ranks as one of the best art colleges in the US. The school prides itself on teaching practical skills and encouraging their budding artists’ visions.
+                <br>
+                <br>
+                A sampling of our majors below:
+            </p>
+            <br>
+            <ul>
+                <li><a class="btn disabled" href="#finanace">Art History</a></li>
+                <li><a class="btn disabled" href="#accounting">Performing Arts</a></li>
+                <li><a class="btn disabled" href="#global">Fine Art</a></li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            <p>
+                At this highly ranked law school, grades no longer exist. 
+                In fact, students do not earn any grades at all during their first term at Yale Law School; afterwards, they are graded only by honors, credit or failure. 
+                Class sizes are small, often with less than 15 students. 
+                <br>
+                <br>
+                A sampling of our majors below:
+            </p>
+            <br>
+            <ul>
+                <li><a class="btn disabled" href="#finanace">History of Law</a></li>
+                <li><a class="btn disabled" href="#accounting">Corporate Law</a></li>
+                <li><a class="btn disabled" href="#global">Intellectual Property & Technology Law</a></li>
+            </ul>
+          </div>
+
+          <div class="tab-pane fade" id="list-engineering" role="tabpanel" aria-labelledby="list-engineering-list">
+            <p>
+                The College of Engineering has about 40 research centers and institutes where students can get involved.
+                Students at the GZA College of Engineering can complete an advanced degree in eight areas, including Industrial Engineering & Operations Research and Applied Science & Technology.
+                <br>
+                <br>
+                A sampling of our majors below:
+            </p>
+            <br>
+            <ul>
+                <li><a class="btn disabled" href="#finanace">Computer Science</a></li>
+                <li><a class="btn disabled" href="#accounting">Bio-Medical Engineering</a></li>
+                <li><a class="btn disabled" href="#global">Electrical Engineering</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  <div class="spacing2"></div>
+  </div>
+<div class="spacing2"></div> --}}
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  <script src="assets/javascript/vendor/jquery.magnific-popup.min.js"></script>
+{{!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> --}}
+{{!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/vendor/jquery.magnific-popup.min.js"></script> --}}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 {{>footer}}
 </body>
