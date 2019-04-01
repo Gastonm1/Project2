@@ -12,8 +12,7 @@ body {
   background-attachment: fixed;
   background-color: rgba(238, 238, 238, 0.81);
   background-position: center;
-  font-family: "Quattrocento Sans", sans-serif;
-  color: white;
+  font-family: 'Quattrocento Sans', sans-serif;
   display: table;
   }   
 
@@ -33,7 +32,9 @@ body {
 .header p {
   font-size: 12px;
 }
-
+p{
+  color: white;
+}
 nav {
   margin-top: 15px;
   position: fixed;
@@ -126,9 +127,13 @@ button:hover {
   margin-top: 40px;;
 }
 
-.footer {    
+.page-footer {      
   color: white;
   text-align: center;
   font-size: 15px;
-  margin-top: 700px;
+  font-family: "PT Sans Narrow", sans-serif;
 }
+  #contact{
+    font-size: 15px;
+  }
+  

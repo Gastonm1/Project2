@@ -45,7 +45,7 @@ module.exports = function(app) {
   app.get("/majors", function (req, res) {
     res.render("majors", {
         title: "Majors",
-        css: "schools.css",
+        css: "majors.css",
         signInPage: false,
         navBar: false
     });
@@ -69,7 +69,7 @@ module.exports = function(app) {
   app.get("/schedule", function (req, res) {
     res.render("schedule", {
         title: "Schedule",
-        css: "style.css",
+        css: "schedule.css",
         signInPage: false,
         navBar: false
     });

@@ -34,7 +34,7 @@ body {
 }
 
 .welcome h1 {
-  color: black;
+  color: white;
   font-size: 70px;
   text-align: center;
   margin-left: 700px;
@@ -42,7 +42,7 @@ body {
 }
 
 .welcome p {
-  color:black;
+  color:white;
   font-size: 20px;
   text-align: center;
   margin-left: 600px;
@@ -81,13 +81,14 @@ body {
   margin: 0;
   padding: 0 0 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .logInbox p {
   margin: 0;
   padding: 0;
   font-weight: bold;
+  font-size: 16px;
 }
 
 .logInbox input {
@@ -104,7 +105,9 @@ body {
   color: white;
   font-size: 16px;
 }
-
+.logInbox h1{
+  text-align: center;
+}
 .logInbox input[type="submit"] {
   border: none;
   outline: none;
@@ -146,65 +149,14 @@ body {
 .main-nav li a:hover {
   border: 1px solid black;
 }
-    
+.message{
+  font-size: 16px;
+}
 
-/* Styling for Schedule page */
-/*  */
-.schedule {
-  color:black;
-  font-size:70px;
-  text-align:center;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-  
-.intro {
-  color:black;
-  font-size:30px;
-  text-align: center;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-  
-.sched {
-  color:black;
-  font-family: "PT Sans Narrow", sans-serif;
-  margin-left:137px;
-}
-  
-.table, tr, td {
-  font-family: "PT Sans Narrow", sans-serif;
-  border-collapse:collapse;
-  border: 1px solid white;
-}
-  
-.table {
-  width:75%;
-  border-radius: 5px;
-  margin: 0px auto;
-  float: none;
-}
-  
-.table tr:nth-child(even) {background-color:clear}
-.table tr:hover {background-color:darkgreen}
-  
-.labels {
-  font-style:bold;
-  font-size:30px;
-  color:black;
-  text-align:center;
-}
-  
-.info {
-  color:black;
-  font-style: bold;
-  font-weight:700;
-  font-size:20px;
-  text-align:center;
-}
-  
 .page-footer {      
   color: white;
   text-align: center;
   font-size: 15px;
-  margin-top: 220px;
+  margin-top:200px;
   font-family: "PT Sans Narrow", sans-serif;
 }
