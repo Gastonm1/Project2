@@ -19,12 +19,17 @@ module.exports = function(app) {
     });
   });
   app.get("/studenthub", function (req, res) {
-    res.render("studenthub", {
+    db.Student.findAll({ where: { id: 1 } }).then(function(dbStudent) {
+      var name = dbStudent[0].dataValues.name;
+
+      res.render("studenthub", {
         title: "Student Hub",
         css: "student.css",
         signInPage: false,
-        navBar: false
+        navBar: false,
+        studentName: name
     });
+    });  
   });
   app.get("/about", function (req, res) {
     res.render("aboutUs", {
@@ -61,18 +66,21 @@ module.exports = function(app) {
         navBar: false,
         studentName: name
     });
-    });
-
-    
+    });    
   });
   // added schedule route
   app.get("/schedule", function (req, res) {
-    res.render("schedule", {
+    db.Student.findAll({ where: { id: 1 } }).then(function(dbStudent) {
+      var name = dbStudent[0].dataValues.name;
+
+      res.render("schedule", {
         title: "Schedule",
         css: "schedule.css",
         signInPage: false,
-        navBar: false
+        navBar: false,
+        studentName: name
     });
+    });   
   });
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {

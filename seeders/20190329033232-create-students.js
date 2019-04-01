@@ -16,8 +16,8 @@ module.exports = {
     "Students",
     [
       {
-        name: "David Scott",
-        email: "davidscott@gmail.com",
+        name: "Marques Gaston",
+        email: "marques@gmail.com",
         password: "3123123121",
         classes: "1,3,5",
         school_id: 1,

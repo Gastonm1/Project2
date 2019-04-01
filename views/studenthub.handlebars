@@ -1,6 +1,6 @@
 
 {{>nav}}
-    <h1 id="welcome">Welcome to your Student Hub!</h1>
+    <h1 id="welcome">Welcome to your Student Hub {{{ studentName }}}!</h1>
     <div class="content">
 
         <div class="infos">
@@ -17,7 +17,7 @@
                         elit. Nisi a nihil corporis dolorem ut iste id omnis
                         blanditiis amet assumenda, velit quas. Et provident,
                         hic laudantium ad exercitationem voluptatibus quis.</p>
-                    <input class="btn btn-outline-light" type="submit" value="Lets go" href="/schedule">
+                    <input class="btn btn-outline-light scheduleBtn" type="submit" value="Lets go" href="/schedule">
                 </div>
             </div>
         </div>
@@ -46,3 +46,6 @@
     </div>
     </div>
 {{>footer}}
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="/js/studenthub.js"></script>
